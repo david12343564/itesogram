@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037835065098",
+    "project_id": "projmoviles",
+    "storage_bucket": "projmoviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037835065098:android:6bfb036a471677ebda0cf3",
+        "android_client_info": {
+          "package_name": "com.example.itesogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037835065098-og1bvkd969lm7i87c2ckko13vs2shrv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC94b39JC3RSJg1HCa6e6iAdfOtBlsC-Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037835065098-og1bvkd969lm7i87c2ckko13vs2shrv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
