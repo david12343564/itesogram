@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:itesogram/resources/auth_methods.dart';
-import 'package:itesogram/responsive/web_screen_layout.dart';
 import 'package:itesogram/screens/login_screen.dart';
 import 'package:itesogram/utils/colors.dart';
 import 'package:itesogram/utils/utils.dart';
@@ -66,7 +65,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
         MaterialPageRoute(
           builder: (context) => const ResponsiveLayout(
             mobileScreenLayout: MobileScreenLayout(),
-            webScreenLayout: webScreenLayout(),
           ),
         ),
       );
@@ -95,21 +93,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
               flex: 2,
             ),
             const SizedBox(
-              height: 24,
+              height: 8,
             ),
             Stack(
               children: [
                 _image != null
                     ? CircleAvatar(
-                        radius: 64, backgroundImage: MemoryImage(_image!))
+                        radius: 50, backgroundImage: MemoryImage(_image!))
                     : const CircleAvatar(
-                        radius: 64,
+                        radius: 50,
                         backgroundImage: NetworkImage(
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwvGWjwjiCh8UCmLjeDGBj9iIZt7cyiynfwnYz_63_hg&s"),
                       ),
                 Positioned(
                     bottom: -10,
-                    left: 80,
+                    left: 60,
                     child: IconButton(
                         onPressed: () {
                           selectImage();

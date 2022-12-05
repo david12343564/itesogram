@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itesogram/resources/auth_methods.dart';
 import 'package:itesogram/responsive/mobile_screen_layout.dart';
-import 'package:itesogram/responsive/web_screen_layout.dart';
 import 'package:itesogram/screens/sigup_screen.dart';
 import 'package:itesogram/utils/colors.dart';
 import 'package:itesogram/utils/utils.dart';
@@ -39,7 +38,6 @@ class _LoginScreenState extends State<LoginScreen> {
           MaterialPageRoute(
             builder: (context) => const ResponsiveLayout(
               mobileScreenLayout: MobileScreenLayout(),
-              webScreenLayout: webScreenLayout(),
             ),
           ),
           (route) => false);

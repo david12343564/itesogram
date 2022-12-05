@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:itesogram/providers/user_provider.dart';
-import 'package:itesogram/utils/global_variables.dart';
 import 'package:provider/provider.dart';
 
 class ResponsiveLayout extends StatefulWidget {
   final Widget mobileScreenLayout;
-  final Widget webScreenLayout;
 
   const ResponsiveLayout({
     super.key,
     required this.mobileScreenLayout,
-    required this.webScreenLayout,
   });
 
   @override
@@ -31,13 +28,8 @@ class _ResponsiveLayoutState extends State<ResponsiveLayout> {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      if (constraints.maxWidth > webScreenSize) {
-        //web screen
-        return widget.webScreenLayout;
-      }
-      //mobile screen
-      return widget.mobileScreenLayout;
-    });
+    return
+        //mobile screen
+        widget.mobileScreenLayout;
   }
 }

@@ -5,9 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:itesogram/providers/user_provider.dart';
 import 'package:itesogram/responsive/mobile_screen_layout.dart';
 import 'package:itesogram/responsive/responsive_layout_screen.dart';
-import 'package:itesogram/responsive/web_screen_layout.dart';
 import 'package:itesogram/screens/login_screen.dart';
-import 'package:itesogram/screens/sigup_screen.dart';
 import 'package:itesogram/utils/colors.dart';
 import 'package:provider/provider.dart';
 
@@ -46,8 +44,8 @@ class MyApp extends StatelessWidget {
             if (snapshot.connectionState == ConnectionState.active) {
               if (snapshot.hasData) {
                 return const ResponsiveLayout(
-                    mobileScreenLayout: MobileScreenLayout(),
-                    webScreenLayout: webScreenLayout());
+                  mobileScreenLayout: MobileScreenLayout(),
+                );
               } else if (snapshot.hasError) {
                 return Center(
                   child: Text('${snapshot.error}'),
